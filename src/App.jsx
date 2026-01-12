@@ -9,7 +9,6 @@ function App() {
   return (
    <div>
     <h1 id="welcome"> Hey </h1>
-
    </div>
   )
 }
