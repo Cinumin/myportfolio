@@ -8,7 +8,10 @@ function App() {
 
   return (
    <div>
-    <h1 id="welcome"> Hey </h1>
+    <h1 id="welcome"> Hello </h1>
+    <a>
+      <img src="https://www.lovethispic.com/image/43771/blossom-gif" className="logo react" alt="Flower" />
+    </a>
    </div>
   )
 }
