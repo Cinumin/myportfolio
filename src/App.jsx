@@ -10,7 +10,7 @@ function App() {
    <div>
     <h1 id="welcome"> Hello </h1>
     <a>
-      <img src="https://www.lovethispic.com/image/43771/blossom-gif" className="logo react" alt="Flower" />
+      <img src="https://www.lovethispic.com/uploaded_images/43771-Blossom-Gif.gif?1" className="logo react" alt="Flower" />
     </a>
    </div>
   )
