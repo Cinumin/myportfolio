@@ -1,9 +1,10 @@
+@import "tailwindcss";
+
 #root {
  max-width: 1280px;
  margin: 0 auto;
  padding: 2rem;
  text-align: center;
- cursor: url('./assets/watering_can.png'), auto;
 }
 
 
@@ -20,6 +21,57 @@
  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.logo.react:hover{
+*{
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    display: flex;
+}
+
+.column {
+    height: 100vh;
+    width: 25%
+}
+
+.pointer {
+    background: #E63946;
+    cursor: url("https://img.icons8.com/doodle/48/000000/one-finger--v1.png"), auto;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-allowed {
+    background: #457B9D;
+    cursor: url("https://img.icons8.com/doodle/48/000000/cancel-2.png"), auto;
+}
+
+.zoom {
+    background: #A8DADC;
+    cursor: url("https://img.icons8.com/doodle/48/000000/search--v1.png"), auto;
+}
+
+.drag {
+    background: #F1FAEE;
+    cursor: url("https://img.icons8.com/doodle/48/000000/resize-four-directions.png"), auto;    
+}
+
+a {
+  text-align: center;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    width: 50%;
+    background: #F1FAEE;
+    border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+a:hover,
+a:focus {
+    cursor: url("https://img.icons8.com/doodle/48/000000/nui2.png"), auto; 
+  color: #E63946;
 }
