@@ -3,6 +3,7 @@
  margin: 0 auto;
  padding: 2rem;
  text-align: center;
+ cursor: url('./assets/watering_can.png'), auto;
 }
 
 
@@ -22,7 +23,3 @@
 .logo.react:hover{
 
 }
-
-.cursor{
-  cursor: url('./assets/watering_can.png'), auto;
-} 
