@@ -1,0 +1,29 @@
+.top-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  width: auto;
+}
+
+.top-nav ul {
+  list-style: none;
+  /* Ensure no bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: var(--text-color, #333);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: var(--primary-color, #007bff);
+}

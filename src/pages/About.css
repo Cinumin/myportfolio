@@ -1,0 +1,49 @@
+.flower-container {
+    width: 600px;
+    height: 600px;
+    /* Use the user-provided vector image as the background container */
+    background-image: url('/flowericon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    /* No fill color, just the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem;
+    /* Increase padding to ensure text stays inside the art */
+    color: #5a2e3a;
+    /* Keeping the text color, adjust if needed based on image */
+    position: relative;
+    overflow: visible;
+    /* Allow image to be fully seen */
+    margin: auto;
+    /* Removed CSS clip-path in favor of the image shape */
+}
+/* Removed pink gradient pseudo-element to avoid conflicting with yellow flower image */
+/* .flower-container::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    right: -10%;
+    bottom: -10%;
+    background: radial-gradient(circle at 50% 50%, transparent 40%, rgba(255, 182, 193, 0.4) 100%);
+    z-index: -1;
+    border-radius: 50%;
+} */
+.about-content {
+    max-width: 80%;
+}
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #d6336c;
+}
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}

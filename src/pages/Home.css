@@ -1,0 +1,106 @@
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 2. Title takes full width with image background */
+.one {
+  flex: 0 0 100%;
+  text-align: center;
+  background-image: url('https://cdn.openart.ai/stable_diffusion/848d7f02b60a65aee436379648660e715a640e8f_2000x2000.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+#main_title {
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-size: 5rem;
+  letter-spacing: 2px;
+  font-family: 'Franklin Gothic Medium'
+}
+
+/* 3. Each image container takes EXACTLY 25% */
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+  flex: 0 0 25%;
+  transition: transform 0.3s ease;
+}
+
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover {
+  transform: translateY(-5px);
+}
+
+.two img,
+.three img,
+.four img,
+.five img,
+.six img,
+.seven img,
+.eight img,
+.nine img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: url('/cursors.cur'), auto;
+}
+
+.four,
+.five {
+  flex: 0 0 25%;
+}
+
+/* 4. Force the image to fill the 25% container */
+.flexbox-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+::view-transition-old(root) {
+  animation: 0.4s ease-in both zoom-out;
+}
+
+::view-transition-new(root) {
+  animation: 0.4s ease-in both zoom-in;
+}
+
+@keyframes zoom-out {
+  to {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
